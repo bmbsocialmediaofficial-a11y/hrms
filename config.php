@@ -3,7 +3,7 @@ $servername = "mysql-11310a8f-bmbsocialmediaofficial-cfd3.f.aivencloud.com";
 $username   = "avnadmin";
 $password   = "AVNS_XwtknjLjZwyvusb29ty";
 $dbname     = "defaultdb";
-$port       = 21836;
+$port       = 21832;
 
 // Init connection with SSL
 $conn = mysqli_init();
