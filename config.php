@@ -1,5 +1,5 @@
 
-$servername = "metro.proxy.rlwy.net"; // Railway public TCP host
+<!-- $servername = "metro.proxy.rlwy.net"; // Railway public TCP host
 $username   = "root";                  // Railway username
 $password   = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj"; // Railway password
 $dbname     = "railway";               // Railway database name
@@ -13,3 +13,4 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+ -->
