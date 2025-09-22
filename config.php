@@ -1,10 +1,18 @@
 <?php
-// $conn = new mysqli($servername, $username, $password, $dbname, $port);
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+// Database credentials (hardcoded)
+$servername = "metro.proxy.rlwy.net";
+$username   = "root";
+$password   = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj";
+$dbname     = "railway";
+$port       = 32231;
 
-echo "Website is running!";
+// Create connection
+$conn = @new mysqli($servername, $username, $password, $dbname, $port);
+
+// Check connection
+if ($conn && $conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+echo "Website is running and database connected successfully!";
 ?>
-
-
