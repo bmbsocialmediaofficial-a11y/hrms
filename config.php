@@ -1,6 +1,5 @@
 <?php
-// Database configuration
-$servername = "metro.proxy.rlwy.net"; // Railway host
+$servername = "metro.proxy.rlwy.net"; // Railway public TCP host
 $username   = "root";                  // Railway username
 $password   = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj"; // Railway password
 $dbname     = "railway";               // Railway database name
