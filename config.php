@@ -1,15 +1,16 @@
 <?php
-// config.php
-
 // Database configuration
-$servername = "metro.proxy.rlwy.net";
-$username = "root";
-$password = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj";
-$dbname = "railway";
+$servername = "metro.proxy.rlwy.net"; // Railway host
+$username   = "root";                  // Railway username
+$password   = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj"; // Railway password
+$dbname     = "railway";               // Railway database name
+$port       = 32231;                    // Railway port
 
-// Define the secure session encryption key (must be 32 bytes after base64 decode)
-define('SESSION_ENCRYPTION_KEY', base64_decode('v6K7f8Q9pL2sJ5hG1mN3cX4wZ8bV0tY7rE6uI9oP1aSdFgHjKlMnBvCxZqWeRtY'));
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
-// Include secure session handler
-require_once 'secure.php';
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
