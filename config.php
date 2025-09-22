@@ -1,17 +1,15 @@
-<?php
-$servername = "mysql-11310a8f-bmbsocialmediaofficial-cfd3.f.aivencloud.com";
-$username   = "avnadmin";
-$password   = "AVNS_XwtknjLjZwyvusb29ty";
-$dbname     = "defaultdb";
-$port       = 21832;
 
-// Init connection with SSL
-$conn = mysqli_init();
-mysqli_ssl_set($conn, NULL, NULL, __DIR__ . "/ca.pem", NULL, NULL);
+$servername = "metro.proxy.rlwy.net"; // Railway public TCP host
+$username   = "root";                  // Railway username
+$password   = "MhJRDhatBtkMwGCgOxizGHkVednZSUBj"; // Railway password
+$dbname     = "railway";               // Railway database name
+$port       = 32231;                    // Railway port
 
-if (!mysqli_real_connect($conn, $servername, $username, $password, $dbname, $port, NULL, MYSQLI_CLIENT_SSL)) {
-    die("❌ Connection failed: " . mysqli_connect_error());
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
-echo "✅ Database connected successfully!";
 ?>
