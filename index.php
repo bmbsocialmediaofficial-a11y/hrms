@@ -1,14 +1,14 @@
 <?php
-// Include the configuration file
-//require_once 'config.php';
+Include the configuration file
+require_once 'config.php';
 
-// Create connection
-//$conn = new mysqli($servername, $username, $password, $dbname);
+Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 // Handle form submissions
 $message = "";
