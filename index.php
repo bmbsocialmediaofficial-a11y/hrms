@@ -1,5 +1,5 @@
 <?php
-Include the configuration file
+//Include the configuration file
 require_once 'config.php';
 
 Create connection
